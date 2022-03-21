@@ -1,394 +1,383 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 .banner__imagem {
-    width: 100%;
-    
-}
-
-@media screen and (min-width:0) {
-    .banner__imagem{
-        height: calc(100vh - 51px);
-    }
-    
-}
-
-@media screen and (min-width:768px) {
-    .banner__imagem{
-        height: calc(100vh - 72px);
-    }
-    
-}
-
-.banner__titulo {
-    color: #fdfdfd;
-    font-family: Pacifico, cursive;
-    position: absolute;
-    left: 50%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    width: 100%;
+  width: 100vh;
+  display: flex;
 }
 
 @media screen and (min-width: 0) {
-    .banner__titulo{
-        font-size: 3rem;
-    }
-
-@media screen and (min-width: 768px){
-    .banner__titulo{
-        font-size: 5.0625rem;
-    }
+  .banner__imagem {
+    height: calc(100vh - 51px);
+    width: auto;
+  }
 }
-    
-    
+
+@media screen and (min-width: 768px) {
+  .banner__imagem {
+    height: calc(100vh - 72px);
+  }
+}
+
+.banner__titulo {
+  color: #fdfdfd;
+  font-family: Pacifico, cursive;
+  position: absolute;
+  left: 50%;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media screen and (min-width: 0) {
+  .banner__titulo {
+    font-size: 3rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner__titulo {
+      font-size: 5.0625rem;
+    }
+  }
 }
 
 .banner {
-    position: relative;
+  position: relative;
 }
 
 .menu__item {
-    list-style: none;
+  list-style: none;
+  display: flex;
 }
 
 .menu__item:last-child .menu__link {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .menu__link {
-    color: #808080;
-    margin-right: 1.25rem;
-    text-decoration: none;
-    padding: 1rem; 
+  color: #808080;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .menu__link.ativo {
-    color: #333333;
-    font-weight: bold;
+  color: #333333;
+  font-weight: bold;
 }
 
 .menu__link:hover {
-    text-decoration: underline;
-    text-decoration-color: #bbbbbb;
-    font-size: 1.26rem;
-    transition: all 1s;
-    padding: 1rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem #000000;
-    border-radius: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #bbbbbb;
+  font-size: 1.1rem;
+  transition: all 1s;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000;
+  border-radius: 1rem;
 }
 
 .menu__lista {
-    display: flex;
+  display: flex;
 }
 
 .pessoa__funcao {
-    color: #595959;
-    font-size: 1.25rem;
-    
+  color: #595959;
+  font-size: 1.25rem;
 }
 
 .pessoa__imagem {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    margin: 0 auto;
-    width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin: 0 auto;
+  width: 300px;
 }
 
-.pessoa__imagem--roberta{
-    border-radius: 100%;
+.pessoa__imagem--roberta {
+  border-radius: 100%;
 }
 
-.pessoa__imagem--marcela{
-    border-radius: 100%;
+.pessoa__imagem--marcela {
+  border-radius: 100%;
 }
 
-.pessoa__imagem--andreia{
-    border-radius: 100%;
+.pessoa__imagem--andreia {
+  border-radius: 100%;
 }
 
 .pessoa__nome {
-    color: #8d0606;
-    font-family: Pacifico, cursive;
-    font-size: 2rem;
-    margin: 1rem 0;
+  color: #8d0606;
+  font-family: Pacifico, cursive;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .pessoa {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width:0){
-    .pessoa{
-        margin-bottom: 2rem;
-
-    }
+@media screen and (min-width: 0) {
+  .pessoa {
+    margin-bottom: 2rem;
+  }
 }
 
-@media screen and (min-width:768px){
-    .pessoa{
-        margin-bottom: 0;
-    }
+@media screen and (min-width: 768px) {
+  .pessoa {
+    margin-bottom: 0;
+  }
 }
 
 .quem-somos__descricao {
-    color: #595959;
-    font-size: 1.75rem;
-    font-weight: 100;
+  color: #595959;
+  font-size: 1.75rem;
+  font-weight: 100;
 }
 
 .quem-somos__titulo {
-    color: #8d0606;
-    font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
-    margin-bottom: 1rem;
+  color: #8d0606;
+  font-family: Pacifico, cursive;
+  font-size: 3.1875rem;
+  margin-bottom: 1rem;
 }
 
 .quem-somos {
-    padding: 5rem;
-    text-align: center;
+  padding: 5rem;
+  text-align: center;
 }
 
 .receita__botao {
-    background: #8d0606;
-    border: none;
-    border-radius: 5px;
-    color: #fdfdfd;
-    padding: 1.2rem;
-    transition: all .1s ease-in-out;
-    margin-left: calc(10% - 1.5rem);
-    box-shadow: 5px 10px 10px #000000;
-    
+  background: #8d0606;
+  border: none;
+  border-radius: 5px;
+  color: #fdfdfd;
+  padding: 1.2rem;
+  transition: all 0.1s ease-in-out;
+  margin-left: calc(10% - 1.5rem);
+  box-shadow: 5px 10px 10px #000000;
 }
 
 .receita__botao:hover {
-    background: #620404;
-    cursor: pointer;
-    font-size: 1.1rem;
-    border-style:double;
-    margin-left: calc(10% - 1.5rem);
-    transition: all 0.5s;
-    
+  background: #620404;
+  cursor: pointer;
+  font-size: 1, 3rem;
+  border-style: double;
+  margin-left: calc(10% - 1.5rem);
+  transition: all 0.5s;
 }
 
 .receita__conteudo {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .receita__descricao {
-    font-size: 1.1875rem;
-    line-height: 1.5;
-    text-align: justify;
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .receita__imagem {
-    height: 200px;
-    border-radius: 8px;
+  height: 200px;
+  border-radius: 8px;
 }
 
 .receita__titulo {
-    font-size: 1.4375rem;
+  font-size: 1.4375rem;
 }
 
 .receita {
-    background: #fdfdfd;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  width: calc(25% - 5rem);
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.receita:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+}
+
+@media screen and (min-width: 0) {
+  .receita {
+    margin-right: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .receita {
+    margin-right: 2.5rem;
+    width: calc(33.33% - 2.5rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .receita {
     margin-right: 5rem;
     width: calc(25% - 5rem);
-    border-radius: 8px;
-    box-shadow: 10px 10px 10px #000000;
+  }
 }
-
-.receita:hover{
-    transform:  scale(1.1);
-    transition: all 1s;
-       
-}
-
-
-@media  screen and (min-width: 0) {
-    .receita{
-        margin-right: 1rem;
-        width: 100%;
-    }
-}
-
-@media  screen and (min-width: 768px) {
-    .receita{
-        margin-right: 2.5rem;
-        width: calc(33.33% - 2.5rem);
-    }
-}
-
-@media  screen and (min-width: 992px) {
-    .receita{
-        margin-right: 5rem;
-        width: calc(25% - 5rem);
-    }
-}
-
 
 .sobre__descricao {
-    color: #595959;
-    
-    font-weight: 100;
+  color: #595959;
+
+  font-weight: 100;
 }
 
-@media screen and (min-width:0) {
-    .sobre__descricao{
-        font-size: 1.3rem;
-    }
+@media screen and (min-width: 0) {
+  .sobre__descricao {
+    font-size: 1.3rem;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .sobre__descricao{
-        font-size: 1.75rem;
-    }
+@media screen and (min-width: 768px) {
+  .sobre__descricao {
+    font-size: 1.75rem;
+  }
 }
 
 .sobre__titulo {
-    color: #8d0606;
-    font-family: Pacifico, cursive;
-    
+  color: #8d0606;
+  font-family: Pacifico, cursive;
 }
 
-@media screen and (min-width:0) {
-    .sobre__titulo{
-        font-size: 2rem;
-    }
+@media screen and (min-width: 0) {
+  .sobre__titulo {
+    font-size: 2rem;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .sobre__titulo{
-        font-size: 3.1875rem;
-    }
+@media screen and (min-width: 768px) {
+  .sobre__titulo {
+    font-size: 3.1875rem;
+  }
 }
 
 .sobre {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 0) {
+  .sobre {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px0) {
+  .sobre {
     padding: 2.5rem;
-    text-align: center;
-}
-
-@media screen and (min-width:0) {
-    .sobre{
-        padding: 2.5rem 1rem;
-    }
-}
-
-@media screen and (min-width:768px0) {
-    .sobre{
-        padding: 2.5rem;
-    }
+  }
 }
 
 .cabecalho {
-    align-items: center;
-    background: #f9f9f9;
-    display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 0) {
+  .cabecalho {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    padding: 0 5rem;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  }
 }
 
-@media screen and (min-width:0){
-    .cabecalho{
-        justify-content: center;
-        padding: 0 1rem;
-        
-    }
+@media screen and (min-width: 0) {
+  .logo {
+    display: none;
+  }
 }
 
-@media screen and (min-width:768px){
-    .cabecalho{
-        padding: 0 5rem;
-        justify-content: space-between;
-    }
-}
-    
-@media screen and (min-width: 0){
-    .logo {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .logo {
-        display: block;
-    }
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+  }
 }
 
 .pessoas {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
 }
 
-@media screen and (min-width:0){
-    .pessoas{
-        flex-direction: column;
-    }
-
+@media screen and (min-width: 0) {
+  .pessoas {
+    flex-direction: column;
+  }
 }
 
-@media screen and (min-width:768px){
-    .pessoas{
-        flex-direction: row;
-    }
-    
+@media screen and (min-width: 768px) {
+  .pessoas {
+    flex-direction: row;
+  }
 }
 
 .receitas {
-    background: #e5e5e5;
-    display: flex;
-    flex-wrap: wrap;
-    
+  background: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-@media screen and (min-width:0){
-    .receitas{
-        padding: 5rem 0 0 1rem;
-    }
+@media screen and (min-width: 0) {
+  .receitas {
+    padding: 5rem 0 0 1rem;
+  }
 }
 
-@media screen and (min-width:768px){
-    .receitas{
-        padding: 5rem 0 0 2rem;
-    }
+@media screen and (min-width: 768px) {
+  .receitas {
+    padding: 5rem 0 0 2rem;
+  }
 }
 
-@media screen and (min-width:992px){
-    .receitas{
-        padding: 5rem 0 0 5rem;
-    }
+@media screen and (min-width: 992px) {
+  .receitas {
+    padding: 5rem 0 0 5rem;
+  }
 }
 
-
-.rodape{
-    background: #bfbfbf;
-    color: #fdfdfd; 
-    text-align: right; 
-    padding: 1.5625rem 5rem; 
-     text-align: center;
-     font-size: 2rem;
-     font-weight: bold;
+.rodape {
+  background: #bfbfbf;
+  color: #fdfdfd;
+  text-align: right;
+  padding: 1.5625rem 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-.contato-rodape{
-    text-decoration: none;
+.contato-rodape {
+  text-decoration: none;
 }
 
-.contato-rodape:hover{
-    text-decoration: underline;
-    text-decoration-color: #bbbbbb;
-    font-size: 2.1rem;
-    transition: all 1s;
-    padding: 1rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem #000000;
-    border-radius: 1rem;
+.contato-rodape:hover {
+  text-decoration: underline;
+  text-decoration-color: #bbbbbb;
+  font-size: 1.5rem;
+  transition: all 1s;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000;
+  border-radius: 1rem;
 }
